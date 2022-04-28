@@ -5,7 +5,9 @@ using UnityEngine.InputSystem;
 
 public class MapRotation : MonoBehaviour
 {
+    public float speedMultiplier = 100;
     public InputAction rotationInput;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +17,8 @@ public class MapRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float input = rotationInput.ReadValue<float>();
+        float currentInput = rotationInput.ReadValue<float>();
 
-        transform.rotation = Quaternion.Euler(0,input,0);
+        transform.Rotate(0,currentInput * speedMultiplier * Time.deltaTime,0);
     }
 }

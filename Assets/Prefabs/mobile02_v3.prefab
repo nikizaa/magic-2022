@@ -2730,7 +2730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedMultiplier: 100
   rotationInput:
-    m_Name: 
+    m_Name: Rotation Input
     m_Type: 0
     m_ExpectedControlType: 
     m_Id: f5b20375-dcd4-43bc-9369-ad1f87aed765

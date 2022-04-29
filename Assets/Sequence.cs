@@ -73,7 +73,7 @@ public class Sequence : MonoBehaviour
 
         // creates a new one
         GameObject prefab = prefabs[currentId];
-        currentObject = Instantiate(prefab); // add to the scene
+        currentObject = Instantiate(prefab,transform.position, transform.rotation, transform); // add to the scene
 
 
         SetState(State.Active);
